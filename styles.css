@@ -1,6 +1,8 @@
-* {
+/* {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -23,7 +25,7 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* Left */
+/* Left 
 .form-section {
   flex: 1;
   padding: 30px;
@@ -99,7 +101,7 @@ body {
   cursor: pointer;
 }
 
-/* Right */
+/* Right 
 .result-section {
   flex: 1;
   background: #143447;

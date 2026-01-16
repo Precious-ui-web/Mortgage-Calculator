@@ -9,10 +9,10 @@ calculateBtn.addEventListener("click", () => {
   const amount = Number(amountInput.value);
   const years = Number(yearsInput.value);
   const rate = Number(rateInput.value);
-  const type = document.querySelector('input[name="type"]:checked').value;
+  const type = document.querySelector('input[name = "type"]:checked').value;
 
   if (!amount || !years || !rate) {
-    alert("Please fill in all fields");
+    alert("Please fill in all fields with numbers");
     return;
   }
 
@@ -25,14 +25,16 @@ calculateBtn.addEventListener("click", () => {
     monthlyPayment =
       (amount * monthlyRate) /
       (1 - Math.pow(1 + monthlyRate, -months));
-  } else {
+  }
+
+  else {
     monthlyPayment = amount * monthlyRate;
   }
 
   result.innerHTML = `
     <h3>Your results</h3>
     <p>Monthly repayment</p>
-    <h1>£${monthlyPayment.toFixed(2)}</h1>
+    <h1>$${monthlyPayment.toFixed(2)}</h1>
   `;
 });
 

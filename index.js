@@ -34,7 +34,7 @@ calculateBtn.addEventListener("click", () => {
   result.innerHTML = `
     <h3>Your results</h3>
     <p>Monthly repayment</p>
-    <h1>$${monthlyPayment.toFixed(2)}</h1>
+    <h1>#${monthlyPayment.toFixed(2)}</h1>
   `;
 });
 
